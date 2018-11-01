@@ -35,7 +35,11 @@ ul{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100%
+  height: 100%;
+}
+
+ul a{
+  text-decoration: none;
 }
 
 li{
@@ -44,11 +48,14 @@ li{
   border-radius: 10px;
   color: #F18F01;
   font-size: 20px;
+  cursor: pointer;
 }
+
+
 
 /* Landing Page */
 
-.landing{
+#landing{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -59,7 +66,7 @@ li{
 
 }
 
-.landing h1{
+#landing h1{
   font-family: "Spicy Rice", cursive;
   font-size: 3em;
   color: #009DDC;
@@ -81,16 +88,17 @@ li{
 
 /* About */
 
-.about{
+#about{
   width: 100%;
   height: 100%;
   padding: 10px;
+  margin-top: 100px;
 }
 
-.about article{
+#about article{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;;
   height: 100%;
 }
 
@@ -98,18 +106,18 @@ li{
   font-family: "Spicy Rice", cursive;
   font-size: 2em;
   color: #009DDC;
-
+  margin-bottom: 20px;
 }
 
 .text{
   color: #009DDC;
   text-align: justify;
-  line-height: 20px;
+  line-height: 30px;
 }
 
 /* Contact */
 
-.contact{
+#contact{
   width: 100%;
   height: 30%;
   padding: 10px;
@@ -153,4 +161,114 @@ li{
   background-size: cover;
   width: 50px;
   height: 50px;
+}
+
+/* Media Queries */
+
+@media (min-height: 667px){
+  header{
+    height: 10%;
+  }
+
+  #contact{
+    height: 40%;
+    
+  }
+
+  .social-media{
+    height: 40%;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1024px){
+  body{
+    font-size: 2.2em;
+  }
+
+  header{
+    height: 15%;
+  }
+
+  .fleche{
+    border-top: 50px solid #009DDC;
+    border-right: 50px solid #FDFFFC;
+    border-left: 50px solid #FDFFFC;
+    border-right: 50px solid #FDFFFC;
+
+  }
+
+  .text{
+    line-height: 55px;
+  }
+
+  li{
+    font-size: 1.5em;
+  }
+
+  .social-media{
+    margin-top: 50px;
+  }
+
+  .linkedin{
+    width: 100px;
+    height: 100px;
+  
+  }
+  
+  .github{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .mail{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+@media (min-width: 1024px) and (min-height: 1366px){
+  body{
+    font-size: 3em;
+  }
+
+  header{
+    height: 15%;
+  }
+
+  .fleche{
+    border-top: 70px solid #009DDC;
+    border-right: 70px solid #FDFFFC;
+    border-left: 70px solid #FDFFFC;
+    border-right: 70px solid #FDFFFC;
+
+  }
+
+  .text{
+    line-height: 60px;
+  }
+
+  li{
+    font-size: 1.5em;
+  }
+
+  .social-media{
+    margin-top: 50px;
+  }
+
+  .linkedin{
+    width: 130px;
+    height: 130px;
+  
+  }
+  
+  .github{
+    width: 130px;
+    height: 130px;
+  }
+  
+  .mail{
+    width: 130px;
+    height: 130px;
+  }
 }
